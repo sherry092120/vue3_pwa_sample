@@ -1,0 +1,10 @@
+# 如果放在專案資料夾底下可以取用.env的變數
+
+version: '2.28.1'
+services:
+  vue-pwa-service: # 服務名稱
+    image: vue-pwa-image
+    ports:
+      - "8081:8081" # vue-pinia
+    environment:
+      - VARIABLE=${VARIABLE}
